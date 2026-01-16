@@ -11,9 +11,29 @@ body {
   line-height: 1.6;
 }
 
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #111;
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
 .nav {
   padding: 24px 48px;
   border-bottom: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand {
@@ -117,6 +137,125 @@ body {
   font-size: 0.9rem;
   color: #6b6b6b;
 }
+
+.add-to-cart {
+  margin-top: 14px;
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid #111;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #111;
+  color: #fff;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 320px;
+  height: 100%;
+  background: #fff;
+  padding: 30px;
+  border-left: 1px solid #eee;
+  transition: right 0.4s ease;
+  z-index: 999;
+}
+
+.cart-drawer.show {
+  right: 0;
+}
+
+.cart-drawer h3 {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cart-item {
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-total {
+  margin: 30px 0;
+  font-weight: 500;
+}
+
+/* CART PAGE */
+#cartPageItems {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.cart-page-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.cart-page-item img {
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.cart-page-item > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-page-item span:first-child {
+  font-weight: 500;
+  flex: 1;
+}
+
+.cart-page-item span:nth-child(2) {
+  color: #6b6b6b;
+  font-size: 0.85rem;
+  min-width: 80px;
+  text-align: right;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  color: #c9a86a;
+  cursor: pointer;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .cart-page-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-page-item > div {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .cart-page-item span:nth-child(2) {
+    text-align: left;
+  }
+}
+
 
 .about {
   background-color: #fafafa;

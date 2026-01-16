@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | THREADLY</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="index.html" class="brand-link">
+      <h1 class="brand">THREADLY</h1>
+    </a>
+
+    <a href="cart.html" class="cart-icon">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </a>
+  </header>
+
+  <!-- CART PAGE -->
+  <section class="products">
+    <h3>Your Cart</h3>
+
+    <div id="cartPageItems"></div>
+
+    <p class="cart-total">
+      Total: R<span id="cartPageTotal">0</span>
+    </p>
+
+    <button class="luxury-btn">Proceed to Checkout</button>
+  </section>
+
+  <footer>
+    <p>© 2026 THREADLY. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

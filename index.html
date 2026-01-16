@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>THREADLY | Modern T-Shirts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THREADLY | Modern T-Shirts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="index.html" class="brand-link">
+        <h1 class="brand">THREADLY</h1>
+      </a>
 
-  <header class="nav">
-  <a href="index.html" class="brand-link">
-    <h1 class="brand">THREADLY</h1>
-  </a>
-</header>
+      <div class="cart-icon" id="cartBtn">
+        🛒
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+    </header>
 
-  <section class="hero fade-in">
-  <span class="luxury-tag fade-in fade-delay-1">Premium Essentials</span>
-  <h2 class="fade-in fade-delay-2">Elevated Everyday<br>T-Shirts</h2>
-  <p class="fade-in fade-delay-3">
-    Thoughtfully designed. Ethically made. Effortlessly stylish.
-  </p>
-  <a href="collection.html">
-    <button class="luxury-btn">Shop Collection</button>
-  </a>
-</section>
+    <section class="hero fade-in">
+      <span class="luxury-tag fade-in fade-delay-1">Premium Essentials</span>
+      <h2 class="fade-in fade-delay-2">Elevated Everyday<br />T-Shirts</h2>
+      <p class="fade-in fade-delay-3">
+        Thoughtfully designed. Ethically made. Effortlessly stylish.
+      </p>
+      <a href="collection.html">
+        <button class="luxury-btn">Shop Collection</button>
+      </a>
+    </section>
 
-  <section class="products fade-in">
-  <h3>Featured T-Shirts</h3>
+    <section class="products fade-in">
+      <h3>Featured T-Shirts</h3>
 
-  <div class="product-grid">
-    <div class="product fade-in">
-      <img src="images/need_weed.png">
-      <h4>Pure White Essential</h4>
-      <p>R749.99</p>
+      <div class="product-grid">
+        <div class="product fade-in">
+          <img src="images/need_weed.png" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+        </div>
+
+        <div class="product fade-in fade-delay-1">
+          <img src="images/hustlers_dept.png" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/think.png" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about fade-in">
+      <h3>About THREADLY</h3>
+      <p>
+        THREADLY is about clean design, quality fabric, and timeless style. We
+        focus on T-shirts that feel good, fit well, and last longer.
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 THREADLY. All rights reserved.</p>
+    </footer>
+
+    <div class="cart-drawer" id="cartDrawer">
+      <h3>Your Cart</h3>
+      <div id="cartItems"></div>
+      <p class="cart-total">Total: R<span id="cartTotal">0</span></p>
+      <a href="cart.html">
+        <button class="luxury-btn">View Cart</button>
+      </a>
     </div>
 
-    <div class="product fade-in fade-delay-1">
-      <img src="images/hustlers_dept.png">
-      <h4>Pure White Essential</h4>
-      <p>R749.99</p>
-    </div>
-
-    <div class="product fade-in fade-delay-2">
-      <img src="images/think.png">
-      <h4>Pure White Essential</h4>
-      <p>R749.99</p>
-    </div>
-  </div>
-</section>
-
-  <section class="about fade-in">
-    <h3>About THREADLY</h3>
-    <p>
-      THREADLY is about clean design, quality fabric, and timeless style.
-      We focus on T-shirts that feel good, fit well, and last longer.
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2026 THREADLY. All rights reserved.</p>
-  </footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

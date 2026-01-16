@@ -1,115 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Collection | THREADLY</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection | THREADLY</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="index.html" class="brand-link">
+        <h1 class="brand">THREADLY</h1>
+      </a>
 
-  <header class="nav">
-  <a href="index.html" class="brand-link">
-    <h1 class="brand">THREADLY</h1>
-  </a>
-</header>
-
-  <section class="hero fade-in">
-    <span class="luxury-tag">The Collection</span>
-    <h2>Premium T-Shirts</h2>
-    <p>Designed for everyday wear. Crafted for lasting comfort.</p>
-  </section>
-
-  <section class="products">
-    <div class="product-grid">
-
-      <div class="product fade-in">
-        <img src="images/decide.png" alt="Black Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
+      <div class="cart-icon" id="cartBtn">
+        🛒
+        <span class="cart-count" id="cartCount">0</span>
       </div>
+    </header>
 
-      <div class="product fade-in fade-delay-1">
-        <img src="images/dice.png" alt="White Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
+    <section class="hero fade-in">
+      <span class="luxury-tag">The Collection</span>
+      <h2>Premium T-Shirts</h2>
+      <p>Designed for everyday wear. Crafted for lasting comfort.</p>
+    </section>
+
+    <section class="products">
+      <div class="product-grid">
+        <div class="product fade-in">
+          <img src="images/decide.png" alt="Black Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Decide Essential"
+            data-price="749.99"
+            data-image="images/decide.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-1">
+          <img src="images/dice.png" alt="White Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Dice Essential"
+            data-price="749.99"
+            data-image="images/dice.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/heart.png" alt="Grey Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Heart Essential"
+            data-price="749.99"
+            data-image="images/heart.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in">
+          <img src="images/heart_print.png" alt="Oversized Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Heart Print Essential"
+            data-price="749.99"
+            data-image="images/heart_print.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-1">
+          <img src="images/hustlers_dept.png" alt="Beige Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Hustlers Dept Essential"
+            data-price="749.99"
+            data-image="images/hustlers_dept.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/inhale.png" alt="Navy Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Inhale Essential"
+            data-price="749.99"
+            data-image="images/inhale.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/mengelara.png" alt="Navy Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Mengelara Essential"
+            data-price="749.99"
+            data-image="images/mengelara.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/need_weed.png" alt="Navy Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Need Weed Essential"
+            data-price="749.99"
+            data-image="images/need_weed.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/pazel.png" alt="Navy Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Pazel Essential"
+            data-price="749.99"
+            data-image="images/pazel.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/pill.png" alt="Navy Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Pill Essential"
+            data-price="749.99"
+            data-image="images/pill.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/smiley.png" alt="Navy Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Smiley Essential"
+            data-price="749.99"
+            data-image="images/smiley.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/spirit.png" alt="Navy Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Spirit Essential"
+            data-price="749.99"
+            data-image="images/spirit.png">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product fade-in fade-delay-2">
+          <img src="images/think.png" alt="Navy Tee" />
+          <h4>Pure White Essential</h4>
+          <p>R749.99</p>
+          <button
+            class="add-to-cart"
+            data-name="Pure White Think Essential"
+            data-price="749.99"
+            data-image="images/think.png">
+            Add to Cart
+          </button>
+        </div>
       </div>
+    </section>
 
-      <div class="product fade-in fade-delay-2">
-        <img src="images/heart.png" alt="Grey Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in">
-        <img src="images/heart_print.png" alt="Oversized Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-1">
-        <img src="images/hustlers_dept.png" alt="Beige Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-2">
-        <img src="images/inhale.png" alt="Navy Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-2">
-        <img src="images/mengelara.png" alt="Navy Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-2">
-        <img src="images/need_weed.png" alt="Navy Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-2">
-        <img src="images/pazel.png" alt="Navy Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-2">
-        <img src="images/pill.png" alt="Navy Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-2">
-        <img src="images/smiley.png" alt="Navy Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-2">
-        <img src="images/spirit.png" alt="Navy Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
-      <div class="product fade-in fade-delay-2">
-        <img src="images/think.png" alt="Navy Tee">
-        <h4>Pure White Essential</h4>
-        <p>R749.99</p>
-      </div>
-
+    <div class="cart-drawer" id="cartDrawer">
+      <h3>Your Cart</h3>
+      <div id="cartItems"></div>
+      <p class="cart-total">Total: R<span id="cartTotal">0</span></p>
+      <a href="cart.html">
+        <button class="luxury-btn">View Cart</button>
+      </a>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2026 THREADLY. All rights reserved.</p>
-  </footer>
+    <footer>
+      <p>© 2026 THREADLY. All rights reserved.</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
