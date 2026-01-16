@@ -154,6 +154,52 @@ body {
   color: #fff;
 }
 
+@keyframes addedToCart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes tickFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes tickFadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.add-to-cart.clicked {
+  animation: addedToCart 0.6s ease;
+  background: #111;
+  color: #fff;
+}
+
+.tick {
+  display: inline-block;
+  margin-right: 6px;
+  animation: tickFadeIn 0.4s ease;
+}
+
 .cart-drawer {
   position: fixed;
   top: 0;
@@ -176,6 +222,37 @@ body {
   font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.cart-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cart-drawer-header h3 {
+  margin-bottom: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #111;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+  color: #c9a86a;
 }
 
 .cart-item {
