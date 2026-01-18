@@ -362,6 +362,10 @@ a:visited {
 }
 
 @media (max-width: 600px) {
+  .header-collection {
+    display: none;
+  }
+
   .cart-page-item {
     flex-direction: column;
     align-items: flex-start;
