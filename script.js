@@ -63,11 +63,12 @@ function updateCart() {
 
     if (cartItemsDiv) {
       const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover; margin-right: 10px;">` : '';
+      const sizeLabel = item.size ? ` - Size: ${item.size}` : '';
       cartItemsDiv.innerHTML += `
         <div class="cart-item">
           ${imageHtml}
           <div>
-            <span>${item.name}</span>
+            <span>${item.name}${sizeLabel}</span>
             <span>R${parseFloat(price).toFixed(2)}</span>
           </div>
         </div>
@@ -76,11 +77,12 @@ function updateCart() {
 
     if (cartPageItems) {
       const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover;">` : '';
+      const sizeLabel = item.size ? ` - Size: ${item.size}` : '';
       cartPageItems.innerHTML += `
         <div class="cart-page-item">
           ${imageHtml}
           <div>
-            <span>${item.name}</span>
+            <span>${item.name}${sizeLabel}</span>
             <span>R${parseFloat(price).toFixed(2)}</span>
             <button class="remove-item" onclick="removeItem(${index})">
               REMOVE
