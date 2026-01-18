@@ -51,6 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("cart", JSON.stringify(cart));
 
+      // Update cart drawer and page
+      updateCart();
+
       // Add animation and tick
       const btn = document.getElementById("addToCartBtn");
       btn.classList.add("clicked");
