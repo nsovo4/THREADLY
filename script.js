@@ -38,32 +38,8 @@ if (closeCartBtn) {
   });
 }
 
-// Add to cart
-document.querySelectorAll(".add-to-cart").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const name = btn.dataset.name;
-    const price = parseFloat(btn.dataset.price);
-    const image = btn.dataset.image;
-
-    cart.push({ name, price, image });
-    localStorage.setItem("cart", JSON.stringify(cart));
-    updateCart();
-
-    // Add animation and tick
-    btn.classList.add("clicked");
-    
-    // Save original text
-    const originalText = btn.textContent;
-    
-    // Add tick
-    btn.innerHTML = '✓ ' + originalText;
-    
-    setTimeout(() => {
-      btn.classList.remove("clicked");
-      btn.textContent = originalText;
-    }, 600);
-  });
-});
+// Add to cart moved to product page
+// Collection page now uses "View" links to navigate to product detail
 
 function updateCart() {
   // Drawer
@@ -79,28 +55,33 @@ function updateCart() {
 
   let total = 0;
 
+  console.log("Cart items:", cart);
+
   cart.forEach((item, index) => {
-    total += item.price;
+    const price = item.price || 0; // Default to 0 if price is null/undefined
+    total += parseFloat(price);
 
     if (cartItemsDiv) {
+      const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover; margin-right: 10px;">` : '';
       cartItemsDiv.innerHTML += `
         <div class="cart-item">
-          <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover; margin-right: 10px;">
+          ${imageHtml}
           <div>
             <span>${item.name}</span>
-            <span>R${item.price.toFixed(2)}</span>
+            <span>R${parseFloat(price).toFixed(2)}</span>
           </div>
         </div>
       `;
     }
 
     if (cartPageItems) {
+      const imageHtml = item.image ? `<img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover;">` : '';
       cartPageItems.innerHTML += `
         <div class="cart-page-item">
-          <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover;">
+          ${imageHtml}
           <div>
             <span>${item.name}</span>
-            <span>R${item.price.toFixed(2)}</span>
+            <span>R${parseFloat(price).toFixed(2)}</span>
             <button class="remove-item" onclick="removeItem(${index})">
               REMOVE
             </button>
