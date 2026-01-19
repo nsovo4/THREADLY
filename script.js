@@ -108,3 +108,9 @@ function removeItem(index) {
 
 // Initialize cart display on page load
 updateCart();
+
+// Listen for cart updates from other pages or product.js
+window.addEventListener("cartUpdated", () => {
+  cart = JSON.parse(localStorage.getItem("cart")) || [];
+  updateCart();
+});

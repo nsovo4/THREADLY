@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
       cart.push(cartItem);
 
       localStorage.setItem("cart", JSON.stringify(cart));
-
-      // Update cart drawer and page
-      updateCart();
+      
+      // Dispatch custom event to notify other pages of cart update
+      window.dispatchEvent(new Event("cartUpdated"));
 
       // Add animation and tick
       const btn = document.getElementById("addToCartBtn");
@@ -77,3 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+// Update cart drawer and page
+      updateCart();
