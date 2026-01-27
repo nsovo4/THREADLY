@@ -364,6 +364,12 @@ a:visited {
   }
 }
 
+@media (max-width: 480px) {
+  .cart-drawer {
+    width: 100%;
+  }
+}
+
 
 .about {
   background-color: #fafafa;
