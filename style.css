@@ -227,12 +227,12 @@ a:visited {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 320px;
+  width: 330px;
   height: 100%;
-  background: #fff;
+  background: #ffffff;
   padding: 30px;
   border-left: 1px solid #eee;
-  transition: right 0.4s ease;
+  transition: right 0.7s ease;
   z-index: 999;
   overflow-y: auto;
 }
@@ -271,7 +271,7 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.4s ease, color 0.2s ease;
 }
 
 .close-btn:hover {
